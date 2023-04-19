@@ -1,19 +1,32 @@
-<mxfile host="app.diagrams.net" modified="2023-04-19T08:13:15.688Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="K0y0CY8sk8DcxAw0yOrK" version="21.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-19T08:18:02.973Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="AGT7C3BZd_xkCTf0gSpP" version="21.1.9" type="github">
   <diagram name="第 1 页" id="rEtoCG68G-mZKwzv9lBi">
     <mxGraphModel dx="1050" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="qH_PQWE1bIo5KxdMD_qR-2" value="Filterer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="90" width="160" height="110" as="geometry">
-            <mxRectangle x="160" y="100" width="80" height="30" as="alternateBounds" />
-          </mxGeometry>
+        <mxCell id="qH_PQWE1bIo5KxdMD_qR-6" value="Filter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="160" height="94" as="geometry" />
         </mxCell>
-        <mxCell id="qH_PQWE1bIo5KxdMD_qR-3" value="+ filters: list" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="qH_PQWE1bIo5KxdMD_qR-2">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="qH_PQWE1bIo5KxdMD_qR-7" value="+ name: str&lt;br&gt;+ nlen: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="qH_PQWE1bIo5KxdMD_qR-6">
+          <mxGeometry y="26" width="160" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="qH_PQWE1bIo5KxdMD_qR-5" value="+ addFilter(Filter)&lt;br&gt;+ removeFilter(Filter)&lt;br&gt;+ filter(LogRecord): Bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="qH_PQWE1bIo5KxdMD_qR-2">
-          <mxGeometry y="52" width="160" height="58" as="geometry" />
+        <mxCell id="qH_PQWE1bIo5KxdMD_qR-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="qH_PQWE1bIo5KxdMD_qR-6">
+          <mxGeometry y="60" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="qH_PQWE1bIo5KxdMD_qR-9" value="+ filter(LogRecord): Bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="qH_PQWE1bIo5KxdMD_qR-6">
+          <mxGeometry y="68" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="qH_PQWE1bIo5KxdMD_qR-11" value="Filterer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="66" width="160" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="qH_PQWE1bIo5KxdMD_qR-12" value="+ filters: list" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="qH_PQWE1bIo5KxdMD_qR-11">
+          <mxGeometry y="26" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="qH_PQWE1bIo5KxdMD_qR-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="qH_PQWE1bIo5KxdMD_qR-11">
+          <mxGeometry y="50" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="qH_PQWE1bIo5KxdMD_qR-14" value="&lt;div&gt;+ addFilter(Filter)&lt;/div&gt;&lt;div&gt;+ removeFilter(Filter)&lt;/div&gt;&lt;div&gt;+ filter(LogRecord): Bool&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="qH_PQWE1bIo5KxdMD_qR-11">
+          <mxGeometry y="58" width="160" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
