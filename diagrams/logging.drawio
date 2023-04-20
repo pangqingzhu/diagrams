@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-20T01:52:55.819Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="wd0HvFfg8e78MIPSr0zY" version="21.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-20T02:03:02.364Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="M6Mb16xwsjQR_6PW70ln" version="21.1.9" type="github">
   <diagram name="第 1 页" id="rEtoCG68G-mZKwzv9lBi">
     <mxGraphModel dx="1050" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -50,15 +50,27 @@
           <mxGeometry y="148" width="210" height="112" as="geometry" />
         </mxCell>
         <mxCell id="9gPiZe_hRZrm5NMCFtfv-5" value="Handler&lt;br&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="560" y="250" width="160" height="86" as="geometry" />
+          <mxGeometry x="560" y="250" width="190" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="9gPiZe_hRZrm5NMCFtfv-6" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9gPiZe_hRZrm5NMCFtfv-5">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="9gPiZe_hRZrm5NMCFtfv-6" value="-&amp;nbsp; name: str&lt;br&gt;+ level: int&lt;br&gt;+ formatter: Formatter&lt;br&gt;-&amp;nbsp; closed: Bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9gPiZe_hRZrm5NMCFtfv-5">
+          <mxGeometry y="26" width="190" height="64" as="geometry" />
         </mxCell>
         <mxCell id="9gPiZe_hRZrm5NMCFtfv-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9gPiZe_hRZrm5NMCFtfv-5">
+          <mxGeometry y="90" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9gPiZe_hRZrm5NMCFtfv-8" value="-&amp;nbsp; createLock()&lt;br&gt;+ acquire()&lt;br&gt;+ release()&lt;br&gt;+ setFormatter(fmt: Formatter)&lt;br&gt;+ format(record: LogRecord)&lt;br&gt;+ emit(record: LogRecord)&lt;br&gt;+ handle(record: LogRecord)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9gPiZe_hRZrm5NMCFtfv-5">
+          <mxGeometry y="98" width="190" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="9gPiZe_hRZrm5NMCFtfv-18" value="RootLogger" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="542" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="9gPiZe_hRZrm5NMCFtfv-19" value="name=&#39;root&#39;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9gPiZe_hRZrm5NMCFtfv-18">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9gPiZe_hRZrm5NMCFtfv-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9gPiZe_hRZrm5NMCFtfv-18">
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="9gPiZe_hRZrm5NMCFtfv-8" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9gPiZe_hRZrm5NMCFtfv-5">
+        <mxCell id="9gPiZe_hRZrm5NMCFtfv-21" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9gPiZe_hRZrm5NMCFtfv-18">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
       </root>
